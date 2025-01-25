@@ -1,12 +1,18 @@
 import discord
 from discord.ext import commands
 from datetime import datetime, timedelta
-
-# Replace 'YOUR_BOT_TOKEN' with your bot's token
-TOKEN = 'YOUR_BOT_TOKEN'
+# using repo secret
+TOKEN = 'DISCORD_TOKEN'
 
 # Initialize the bot with the '!' command prefix
 bot = commands.Bot(command_prefix='!')
+
+# Initialize the bot with the '/' command prefix
+bot = commands.Bot(command_prefix='/')
+
+# Initialize the bot with the '.' command prefix
+bot = commands.Bot(command_prefix='.')
+
 
 # Dictionary to store user birthdays
 birthdays = {}
